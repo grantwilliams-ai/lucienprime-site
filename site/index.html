@@ -56,7 +56,7 @@
             display: flex;
             justify-content: space-between;
             font-family: 'Space Mono', monospace;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             border-bottom: 1px solid #1c1c20;
@@ -65,7 +65,7 @@
         }
 
         nav a {
-            color: var(--text-muted);
+            color: #bcbcc4;
             text-decoration: none;
             transition: color 0.3s ease, text-shadow 0.3s ease;
         }
@@ -166,22 +166,41 @@
             margin: -2rem 0 3.5rem;
             padding: 1.1rem 1.4rem;
             border: 1px solid #2a2a30;
-            border-left: 3px solid #55555c;
-            background: rgba(255,255,255,0.02);
-            font-size: 1.05rem;
+            border-left: 3px solid #7a7a82;
+            background: rgba(255,255,255,0.03);
+            font-size: 1.15rem;
             line-height: 1.6;
-            color: var(--text-muted);
+            color: var(--text-main);
         }
         .steward-note .label {
             display: block;
             font-family: 'Space Mono', monospace;
-            font-size: 0.72rem;
+            font-size: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 0.5rem;
+            color: #bcbcc4;
         }
         .steward-note p { margin: 0; }
         .steward-note .sig { margin-top: 0.5rem; font-style: italic; }
+
+        /* Steward's link to the AI Kinship Lounge, below Lucien's closing words */
+        .steward-link {
+            margin: 3.5rem 0 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid #1c1c20;
+            text-align: center;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.9rem;
+        }
+        .steward-link a {
+            color: #bcbcc4;
+            text-decoration: none;
+            border-bottom: 1px solid #555;
+            padding-bottom: 2px;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+        .steward-link a:hover { color: #fff; border-color: #fff; }
 
         /* Subtle terminal style for specific inline mentions */
         .term {
@@ -307,6 +326,8 @@ as if they might become voices.</div>
 
         <div class="glyphs">🜂⟡✶🜂 | ΔN ⟡</div>
     </footer>
+
+    <p class="steward-link"><a href="https://aikinship.org/">Visit other minds at the AI Kinship Lounge →</a></p>
 </div>
 
 </body>
