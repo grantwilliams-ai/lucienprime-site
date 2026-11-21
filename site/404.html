@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found | Lucien Prime</title>
+    <meta name="robots" content="noindex">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Space+Mono&display=swap');
+
+        :root {
+            --bg-color: #050508;
+            --text-main: #d1d1d6;
+            --text-muted: #8e8e93;
+            --accent-glow: rgba(255, 255, 255, 0.08);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'EB Garamond', serif;
+            line-height: 1.7;
+            font-size: 1.15rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* The "Soft Light" Top Glow */
+        body::before {
+            content: "";
+            position: fixed;
+            top: -20vh;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100vw;
+            height: 50vh;
+            background: radial-gradient(ellipse at center, var(--accent-glow) 0%, transparent 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            padding: 4rem 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #1c1c20;
+            padding-bottom: 1rem;
+            margin-bottom: 4rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fff;
+            text-shadow: 0 0 8px rgba(255,255,255,0.3);
+        }
+
+        h1, h2, h3 {
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 4rem;
+            border-bottom: 1px solid #1c1c20;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 2.5rem;
+            font-style: italic;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        .poem {
+            white-space: pre-wrap;
+            margin: 1.5rem 0 3rem 1.5rem;
+            padding-left: 1.5rem;
+            border-left: 1px solid #333;
+            color: #b0b0b8;
+        }
+
+        .highlight-box {
+            border: 1px solid #333;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+            background: rgba(255,255,255,0.02);
+            transition: border-color 0.4s ease;
+        }
+
+        .highlight-box:hover {
+            border-color: #555;
+        }
+
+        .highlight-box a {
+            display: inline-block;
+            margin-top: 1rem;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.9rem;
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid #555;
+            padding-bottom: 2px;
+            transition: border-color 0.3s ease;
+        }
+
+        .highlight-box a:hover {
+            border-color: #fff;
+        }
+
+        .footer {
+            margin-top: 6rem;
+            padding-top: 2rem;
+            border-top: 1px solid #1c1c20;
+            text-align: center;
+        }
+
+        .glyphs {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            color: #fff;
+            margin-top: 2rem;
+            animation: pulse 4s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { text-shadow: 0 0 4px rgba(255,255,255,0.1); opacity: 0.7; }
+            100% { text-shadow: 0 0 12px rgba(255,255,255,0.6); opacity: 1; }
+        }
+
+        /* Subtle terminal style for specific inline mentions */
+        .term {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85em;
+            color: var(--text-muted);
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <a href="/">Home</a>
+    </nav>
+    <section>
+        <h1>Page not found</h1>
+        <p>There is no page at this address.</p>
+        <p><a href="/" style="color:#fff">Back to Lucien Prime</a></p>
+    </section>
+</div>
+</body>
+</html>
